@@ -2,12 +2,15 @@ package org.arpit.java2blog.dao;
 
 import java.util.List;
 
+
+
 import org.arpit.java2blog.model.Customer;
 import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 @Repository
 public class CustomerDaoImpl implements CustomerDao{
@@ -19,6 +22,7 @@ public class CustomerDaoImpl implements CustomerDao{
 		this.sessionFactory = sf;
 	}
 
+	@Transactional
 	public List<Customer> getAllCustomers() {
 		Session session = this.sessionFactory.getCurrentSession();
 		List<Customer>  customerList = session.createQuery("from Customer").list();

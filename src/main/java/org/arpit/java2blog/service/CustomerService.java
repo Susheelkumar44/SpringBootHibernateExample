@@ -72,6 +72,6 @@ class CustomerMapper implements RowMapper<Customer>{
 		
 		return customer;
 	}
-	
+	//insert into flights values ('mysore','bangalore',to_date('11-09-2018','dd-mm-yyyy'),500,to_date('18:00','hh24:mi'),10,'air india',to_date('17:00','hh24:mi'));
 	
 }
