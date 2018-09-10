@@ -18,7 +18,7 @@ public class CustomerController {
 	@Autowired
 	CustomerService customerService;
 
-	@RequestMapping(value = "/getAllCustomers", method = RequestMethod.GET, headers = "Accept=application/json")
+	@RequestMapping(value = "/signUp", method = RequestMethod.GET, headers = "Accept=application/json")
 	public String getAllCustomers(Model model) {
 
 		List<Customer> listOfCustomers = customerService.getAllCustomers();
@@ -29,7 +29,7 @@ public class CustomerController {
 
 	@RequestMapping(value = "/", method = RequestMethod.GET, headers = "Accept=application/json")
 	public String goToHomePage() {
-		return "home";
+		return "index";
 	}
 	@RequestMapping(value = "/login", method = RequestMethod.GET, headers = "Accept=application/json")
 	public String goTologinPage() {
