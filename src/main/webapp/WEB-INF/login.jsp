@@ -1,4 +1,7 @@
-
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -78,7 +81,7 @@
 			<div class="container">
 				<div class="nav-header">
 					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
-					<h1 id="fh5co-logo"><a href="index.html"><i class="icon-airplane"></i>Travel</a></h1>
+					<h1 id="fh5co-logo"><a href="index"><i class="icon-airplane"></i>Travel</a></h1>
 					<!-- START #fh5co-menu-wrap -->
 					<nav id="fh5co-menu-wrap" role="navigation">
 						<ul class="sf-menu" id="fh5co-primary-menu">
@@ -94,7 +97,7 @@
 		</header>
 
 		<!-- end:header-top -->
-	
+	<form:form id="loginForm" modelAttribute="login" action="loginProcess" method="post">
 		<div class="fh5co-hero">
 			<div class="fh5co-overlay"></div>
 			<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_3.jpg);">
@@ -125,13 +128,13 @@
 											<div class="col-xs-12">
 												<div class="input-field">
 													<label for="from">Email:</label>
-													<input type="text" class="form-control" />
+													<input type="text" class="form-control" name="email" />
 												</div>
 											</div>
 											<div class="col-xs-12">
 												<div class="input-field">
 													<label for="from">Password:</label>
-													<input type="password" class="form-control">
+													<input type="password" class="form-control" name="password">
 												</div><br/>
 											</div>
 											
@@ -164,6 +167,12 @@
 											</div>
 										</div>
 									 </div>
+									 </form:form>
+            <table align="center">
+                <tr>
+                    <td style="font-style: italic; color: red;"><h4>${message}</h4></td>
+                </tr>
+            </table>
 									
 									 <!--<div role="tabpanel" class="tab-pane" id="hotels">
 									 	<div class="row">

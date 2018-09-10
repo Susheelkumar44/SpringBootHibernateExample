@@ -1,8 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
+
+
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -81,15 +81,28 @@
 			<div class="container">
 				<div class="nav-header">
 					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
-					<h1 id="fh5co-logo"><a href="index"><i class="icon-airplane"></i>Travel</a></h1>
+					<h1 id="fh5co-logo"><a href="index.html"><i class="icon-airplane"></i>Travel</a></h1>
 					<!-- START #fh5co-menu-wrap -->
 					<nav id="fh5co-menu-wrap" role="navigation">
 						<ul class="sf-menu" id="fh5co-primary-menu">
+							<li class="active"><a href="index.html"></a></li>
+							<!-- <li>
+								<a href="vacation.html" class="fh5co-sub-ddown">Vacations</a>
+								<ul class="fh5co-sub-menu">
+									<li><a href="#">Family</a></li>
+									<li><a href="#">CSS3 &amp; HTML5</a></li>
+									<li><a href="#">Angular JS</a></li>
+									<li><a href="#">Node JS</a></li>
+									<li><a href="#">Django &amp; Python</a></li>
+								</ul>
+							</li> -->
 							<li><a href="flights">Flights</a></li>
 							<li><a href="hotels">Hotels</a></li>
-							<li class="active"><a href="login">Login</a></li>
-							<li><a href="signUp">SignUp</a></li>
-							<li><a href="contact">Contact</a></li>	
+							<!-- <li><a href="car.html">Car</a></li>
+							<li><a href="blog.html">Blog</a></li> -->
+							<li><a href="login">Login</a></li>
+							<li><a href="signUp"> SignUp </a></li>
+							<li><a href="contact">Contact</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -97,52 +110,59 @@
 		</header>
 
 		<!-- end:header-top -->
-	<form:form method="post" modelAttribute="customer" action="${pageContext.request.contextPath}/addCustomer">
-		<div class="fh5co-hero">
-			<div class="fh5co-overlay"></div>
-			<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_3.jpg);">
-				<div class="desc">
+	
+		<!--<div class="fh5co-hero">
+			<div class="fh5co-overlay"></div> 
+			 <class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/paris3.jpg);"> 
+			 <div cla<divss="container">
+			 <div class="row">
+					<div class="col-md-6 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+						<div href="#"><img src="images/Khajjiar1.jpg" alt="No display available" class="img-responsive">
+							<div class="desc">
+								<span></span>
+								<h3>Khajjiar</h3>
+								<span class="price"> ₹10,000</span>
+								<a class="btn btn-primary btn-outline" href="#">Book Flight <i class="icon-arrow-right22"></i></a>
+							</div>
+						</div>
+					</div>
+			 
+				<!--<div class="desc">
 					<div class="container">
-						<div class="row" >
+						<div class="row">
 							<div class="col-sm-5 col-md-5">
-								<a href="index" id="main-logo">Travel</a> 
-								
-								 <div class="tabulation animate-box">
+								<div class="tabulation animate-box"> -->
 
-								  <!-- Nav tabs -->
-								   <ul  class="nav nav-tabs" role="tablist">
+								  <!-- Nav tabs 
+								   <ul class="nav nav-tabs" role="tablist">
 								      <li role="presentation" class="active">
-								      	<a href="#login" aria-controls="login" role="tab" data-toggle="tab">SignUp</a>
+								      	<a href="#flights" aria-controls="flights" role="tab" data-toggle="tab">Flights</a>
 								      </li>
-								     <!-- <li role="presentation">
+								      <li role="presentation">
 								    	   <a href="#hotels" aria-controls="hotels" role="tab" data-toggle="tab">Hotels</a>
-								      </li>-->
-								      
-								   </ul>
+								      </li>
+								      <li role="presentation">
+								    	   <a href="#packages" aria-controls="packages" role="tab" data-toggle="tab">Packages</a>
+								      </li>
+								   </ul> -->
 
-								   <!-- Tab panes -->
-								   
+								   <!-- Tab panes
 									<div class="tab-content">
 									 <div role="tabpanel" class="tab-pane active" id="flights">
 										<div class="row">
-											<div class="col-xs-12">
-											<div class="input-field">
-													<label for="from">Name:</label>
-													<input type="text" class="form-control" name="customerName" />
-												</div>
+											<div class="col-xxs-12 col-xs-6 mt">
 												<div class="input-field">
-													<label for="from">Email:</label>
-													<input type="text" class="form-control" name="email" />
+													<label for="from">From:</label>
+													<input type="text" class="form-control" id="from-place" placeholder="Los Angeles, USA"/>
 												</div>
 											</div>
-											<div class="col-xs-12">
+											<div class="col-xxs-12 col-xs-6 mt">
 												<div class="input-field">
-													<label for="from">Password:</label>
-													<input type="password" class="form-control" name="password">
-												</div><br/>
+													<label for="from">To:</label>
+													<input type="text" class="form-control" id="to-place" placeholder="Tokyo, Japan"/>
+												</div>
 											</div>
-											
-											<!--<div class="col-xxs-12 col-xs-6 mt alternate">
+											<div class="col-xxs-12 col-xs-6 mt alternate">
 												<div class="input-field">
 													<label for="date-start">Check In:</label>
 													<input type="text" class="form-control" id="date-start" placeholder="mm/dd/yyyy"/>
@@ -150,11 +170,11 @@
 											</div>
 											<div class="col-xxs-12 col-xs-6 mt alternate">
 												<div class="input-field">
-													<label for="date-end">Password</label>
-													<input type="password" class="form-control" id="date-end"/>
+													<label for="date-end">Check Out:</label>
+													<input type="text" class="form-control" id="date-end" placeholder="mm/dd/yyyy"/>
 												</div>
 											</div>
-											<!--<div class="col-sm-12 mt">
+											<div class="col-sm-12 mt">
 												<section>
 													<label for="class">Class:</label>
 													<select class="cs-select cs-skin-border">
@@ -164,19 +184,38 @@
 														<option value="business">Business</option>
 													</select>
 												</section>
-											</div>-->
-											
+											</div>
+											<div class="col-xxs-12 col-xs-6 mt">
+												<section>
+													<label for="class">Adult:</label>
+													<select class="cs-select cs-skin-border">
+														<option value="" disabled selected>1</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+													</select>
+												</section>
+											</div>
+											<div class="col-xxs-12 col-xs-6 mt">
+												<section>
+													<label for="class">Children:</label>
+													<select class="cs-select cs-skin-border">
+														<option value="" disabled selected>1</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+													</select>
+												</section>
+											</div>
 											<div class="col-xs-12">
-												<input type="submit" class="btn btn-primary btn-block" value="SignUp">
+												<input type="submit" class="btn btn-primary btn-block" value="Search Flight">
 											</div>
 										</div>
-									 </div>
-									 </form:form>
-									<c:if test="${!empty listOfCustomers}">
-<h3 style="text-align:center">You have Successfully registered</h3>
-</c:if>
-									
-									 <!--<div role="tabpanel" class="tab-pane" id="hotels">
+									 </div> 
+
+									 <div role="tabpanel" class="tab-pane" id="hotels">
 									 	<div class="row">
 											<div class="col-xxs-12 col-xs-12 mt">
 												<div class="input-field">
@@ -235,20 +274,20 @@
 												<input type="submit" class="btn btn-primary btn-block" value="Search Hotel">
 											</div>
 										</div>
-									 </div>-->
+									 </div>
 
 									 <div role="tabpanel" class="tab-pane" id="packages">
 									 	<div class="row">
 											<div class="col-xxs-12 col-xs-6 mt">
 												<div class="input-field">
 													<label for="from">City:</label>
-													<input type="text" class="form-control" id="from-place" placeholder="Bengaluru, India"/>
+													<input type="text" class="form-control" id="from-place" placeholder="Los Angeles, USA"/>
 												</div>
 											</div>
 											<div class="col-xxs-12 col-xs-6 mt">
 												<div class="input-field">
 													<label for="from">Destination:</label>
-													<input type="text" class="form-control" id="to-place" placeholder="NewDelhi, India"/>
+													<input type="text" class="form-control" id="to-place" placeholder="Tokyo, Japan"/>
 												</div>
 											</div>
 											<div class="col-xxs-12 col-xs-6 mt alternate">
@@ -306,204 +345,314 @@
 									</div>
 
 								</div>
-								
-							</div>
+							</div> 
 							<div class="desc2 animate-box">
-								<div class="col-sm-7 col-sm-push-1 col-md-7 col-md-push-1">
-									
-									<h2>Exclusive Limited Time Offer</h2>
-									<h3>Fly to NewDelhi from Bangalore</h3>
-									<span class="price">INR 4000</span>
-									<h4 style="color:white;">Then Y Waiting Hurry Up!!!</h4>
-									<!-- <p><a class="btn btn-primary btn-lg" href="#">Get Started</a></p> -->
-								</div>
-							<!--<div class="desc2 animate-box">
 								<div class="col-sm-7 col-sm-push-1 col-md-7 col-md-push-1">
 									<p>HandCrafted by <a href="http://frehtml5.co/" target="_blank" class="fh5co-site-name">FreeHTML5.co</a></p>
 									<h2>Exclusive Limited Time Offer</h2>
 									<h3>Fly to Hong Kong via Los Angeles, USA</h3>
 									<span class="price">$599</span>
 									<!-- <p><a class="btn btn-primary btn-lg" href="#">Get Started</a></p> -->
-								<!--</div>-->
+								<!--</div>
+							</div>
+						</div> 
+					</div> 
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!-- <div class="fh5co-hero">
+			<div class="fh5co-overlay"></div> 
+			 <class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/paris3.jpg);"> -->
+		
+           <div class="container">
+		   <div id="fh5co-tours" class="fh5co-section-gray">
+		   <div class="row">
+		   <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+						<h3>COME, DISCOVER INDIA</h3>
+						<p><b>Travelling Isn't Always About Running Away From Things, Sometimes It's About Running Into What You Truely Want.</b></p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+						<div href="#"><img src="images/Khajjiar1.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+							<div class="desc">
+								<span></span>
+								<h3>Khajjiar</h3>
+								<span class="price"> INR.10,000</span>
+								<a class="btn btn-primary btn-outline" href="#">Book Flight <i class="icon-arrow-right22"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+						<div href="#"><img src="images/Shimla1.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+							<div class="desc">
+								<span></span>
+								<h3>Shimla</h3>
+								<span class="price">INR.15,000</span>
+								<a class="btn btn-primary btn-outline" href="#">Book Flight<i class="icon-arrow-right22"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+						<div href="#"><img src="images/Ladakh1.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+							<div class="desc">
+								<span></span>
+								<h3>Ladakh</h3>
+								<span class="price">INR.17,000</span>
+								<a class="btn btn-primary btn-outline" href="#">Book Flight<i class="icon-arrow-right22"></i></a>
+							</div>
+						</div>
+					</div>
+					<!--<div class="col-md-12 text-center animate-box">
+						<p><a class="btn btn-primary btn-outline btn-lg" href="#">See All Offers <i class="icon-arrow-right22"></i></a></p>
+					</div> -->
+				</div>
+			</div>
+       </div>
+		<!-- <div id="fh5co-features">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 animate-box">
+
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-hotairballoon"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Family Travel</h3>
+								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+								<p><a href="#">Learn More</a></p>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="col-md-4 animate-box">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-search"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Travel Plans</h3>
+								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+								<p><a href="#">Learn More</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-wallet"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Honeymoon</h3>
+								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+								<p><a href="#">Learn More</a></p>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="row">
+					<div class="col-md-4 animate-box">
+
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-wine"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Business Travel</h3>
+								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+								<p><a href="#">Learn More</a></p>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="col-md-4 animate-box">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-genius"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Solo Travel</h3>
+								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+								<p><a href="#">Learn More</a></p>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-chat"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Explorer</h3>
+								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+								<p><a href="#">Learn More</a></p>
+							</div>
+						</div>
+					</div> 
+				</div>
 			</div>
+		</div> -->
 
-		</div>
 		
+		<div id="fh5co-destination">
+			<div class="tour-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<ul id="fh5co-destination-list" class="animate-box">
+							<li class="one-forth text-center" style="background-image: url(images/place-1.jpg); ">
+								<a href="#">
+									<div class="case-studies-summary">
+										<h2>Kasol</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-forth text-center" style="background-image: url(images/place-2.jpg); ">
+								<a href="#">
+									<div class="case-studies-summary">
+										<h2>Nainital</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-forth text-center" style="background-image: url(images/place-3.jpg); ">
+								<a href="#">
+									<div class="case-studies-summary">
+										<h2>Ranthambore</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-forth text-center" style="background-image: url(images/place-4.jpg); ">
+								<a href="#">
+									<div class="case-studies-summary">
+										<h2>Taj Mahal</h2>
+									</div>
+								</a>
+							</li>
 
-		<!--<div id="fh5co-tours" class="fh5co-section-gray">
+							<li class="one-forth text-center" style="background-image: url(images/place-5.jpg); ">
+								<a href="#">
+									<div class="case-studies-summary">
+										<h2>Jaisalmer</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-half text-center">
+								<div class="title-bg">
+									<div class="case-studies-summary">
+										<h2>Most Popular Destinations</h2>
+									</div>
+								</div>
+							</li>
+							<li class="one-forth text-center" style="background-image: url(images/place-6.jpg); ">
+								<a href="#">
+									<div class="case-studies-summary">
+										<h2>Hampi</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-forth text-center" style="background-image: url(images/place-7.jpg); ">
+								<a href="#">
+									<div class="case-studies-summary">
+										<h2>Dudhsagar Falls</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-forth text-center" style="background-image: url(images/place-8.jpg); ">
+								<a href="#">
+									<div class="case-studies-summary">
+										<h2>Lonavala</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-forth text-center" style="background-image: url(images/place-9.jpg); ">
+								<a href="#">
+									<div class="case-studies-summary">
+										<h2>Sakleshpur</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-forth text-center" style="background-image: url(images/place-10.jpg); ">
+								<a href="#">
+									<div class="case-studies-summary">
+										<h2>Mysore</h2>
+									</div>
+								</a>
+							</li>
+						</ul>		
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- <div id="fh5co-blog-section" class="fh5co-section-gray">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-						<h3>Book A Flight</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-					</div>
-				</div>
-				<div class="row row-bottom-padded-md">
-					<div class="col-md-12 animate-box">
-						<h2 class="heading-title">Todays Flight Deal</h2>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="row">
-							<div class="col-md-12">
-								<h4>Better Deals, More Abilities</h4>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							</div>
-							<div class="col-md-12">
-								<h4>Keep up with the news of your airline</h4>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							</div>
-							<div class="col-md-12">
-								<h4>In-Flight Experience</h4>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<img class="img-responsive" src="images/cover_bg_3.jpg" alt="travel">
-						<a href="#" class="flight-book">
-							<div class="plane-name">
-								<span class="p-flight">United States Airways</span>
-							</div>
-							<div class="desc">
-								<div class="left">
-									<h4>HK-MNL</h4>
-									<span>Dec 20 - Dec29</span>
-								</div>
-								<div class="right">
-									<span class="price">
-										<i class="icon-arrow-down22"></i>
-										$1000
-									</span>
-								</div>
-							</div>
-						</a>
-						<a href="#" class="flight-book">
-							<div class="plane-name">
-								<span class="p-flight">Qatar Airways</span>
-							</div>
-							<div class="desc">
-								<div class="left">
-									<h4>HK-MNL</h4>
-									<span>Dec 20 - Dec29</span>
-								</div>
-								<div class="right">
-									<span class="price">
-										<i class="icon-arrow-down22"></i>
-										$790
-									</span>
-								</div>
-							</div>
-						</a>
-						<a href="#" class="flight-book">
-							<div class="plane-name">
-								<span class="p-flight">Philippine Airline</span>
-							</div>
-							<div class="desc">
-								<div class="left">
-									<h4>MNL-HK</h4>
-									<span>Dec 20 - Dec29</span>
-								</div>
-								<div class="right">
-									<span class="price">
-										<i class="icon-arrow-down22"></i>
-										$500
-									</span>
-								</div>
-							</div>
-						</a>
-						<a href="#" class="flight-book">
-							<div class="plane-name">
-								<span class="p-flight">China Airways</span>
-							</div>
-							<div class="desc">
-								<div class="left">
-									<h4>HK-LAS</h4>
-									<span>Dec 20 - Dec29</span>
-								</div>
-								<div class="right">
-									<span class="price">
-										<i class="icon-arrow-down22"></i>
-										$900
-									</span>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="row row-bottom-padded-md">
-					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
-						<div href="#"><img src="images/place-1.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-							<div class="desc">
-								<span></span>
-								<h3>New York</h3>
-								<span>3 nights</span>
-								<span class="price">$1,000</span>
-								<a class="btn btn-primary btn-outline" href="#">Book Now <i class="icon-arrow-right22"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
-						<div href="#"><img src="images/place-2.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-							<div class="desc">
-								<span></span>
-								<h3>Philippines</h3>
-								<span>4 nights</span>
-								<span class="price">$1,000</span>
-								<a class="btn btn-primary btn-outline" href="#">Book Now <i class="icon-arrow-right22"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
-						<div href="#"><img src="images/place-3.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-							<div class="desc">
-								<span></span>
-								<h3>Hongkong</h3>
-								<span>2 nights</span>
-								<span class="price">$1,000</span>
-								<a class="btn btn-primary btn-outline" href="#">Book Now <i class="icon-arrow-right22"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
-						<div href="#"><img src="images/place-4.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-							<div class="desc">
-								<span></span>
-								<h3>New York</h3>
-								<span>3 nights</span>
-								<span class="price">$1,000</span>
-								<a class="btn btn-primary btn-outline" href="#">Book Now <i class="icon-arrow-right22"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
-						<div href="#"><img src="images/place-5.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-							<div class="desc">
-								<span></span>
-								<h3>Philippines</h3>
-								<span>4 nights</span>
-								<span class="price">$1,000</span>
-								<a class="btn btn-primary btn-outline" href="#">Book Now <i class="icon-arrow-right22"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
-						<div href="#"><img src="images/place-6.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-							<div class="desc">
-								<span></span>
-								<h3>Hongkong</h3>
-								<span>2 nights</span>
-								<span class="price">$1,000</span>
-								<a class="btn btn-primary btn-outline" href="#">Book Now <i class="icon-arrow-right22"></i></a>
-							</div>
-						</div>
+						<h3>Recent From Blog</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
 					</div>
 				</div>
 			</div>
-		</div>
+			<div class="container">
+				<div class="row row-bottom-padded-md">
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<div class="fh5co-blog animate-box">
+							<a href="#"><img class="img-responsive" src="images/place-1.jpg" alt=""></a>
+							<div class="blog-text">
+								<div class="prod-title">
+									<h3><a href="#">30% Discount to Travel All Around the World</a></h3>
+									<span class="posted_by">Sep. 15th</span>
+									<span class="comment"><a href="">21<i class="icon-bubble2"></i></a></span>
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+									<p><a href="#">Learn More...</a></p>
+								</div>
+							</div> 
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<div class="fh5co-blog animate-box">
+							<a href="#"><img class="img-responsive" src="images/place-2.jpg" alt=""></a>
+							<div class="blog-text">
+								<div class="prod-title">
+									<h3><a href="#">Planning for Vacation</a></h3>
+									<span class="posted_by">Sep. 15th</span>
+									<span class="comment"><a href="">21<i class="icon-bubble2"></i></a></span>
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+									<p><a href="#">Learn More...</a></p>
+								</div>
+							</div> 
+						</div>
+					</div>
+					<div class="clearfix visible-sm-block"></div>
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<div class="fh5co-blog animate-box">
+							<a href="#"><img class="img-responsive" src="images/place-3.jpg" alt=""></a>
+							<div class="blog-text">
+								<div class="prod-title">
+									<h3><a href="#">Visit Tokyo Japan</a></h3>
+									<span class="posted_by">Sep. 15th</span>
+									<span class="comment"><a href="">21<i class="icon-bubble2"></i></a></span>
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+									<p><a href="#">Learn More...</a></p>
+								</div>
+							</div> 
+						</div>
+					</div>
+					<div class="clearfix visible-md-block"></div>
+				</div>
+
+				<div class="col-md-12 text-center animate-box">
+					<p><a class="btn btn-primary btn-outline btn-lg" href="#">See All Post <i class="icon-arrow-right22"></i></a></p>
+				</div>
+
+			</div>
+		</div> -->
+		
+		<!-- fh5co-blog-section -->
 		<div id="fh5co-testimonial" style="background-image:url(images/img_bg_1.jpg);">
 		<div class="container">
 			<div class="row animate-box">
@@ -516,9 +665,9 @@
 					<div class="box-testimony animate-box">
 						<blockquote>
 							<span class="quote"><span><i class="icon-quotes-right"></i></span></span>
-							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+							<p>&ldquo; This site is just amazing and simple. Searching booking proceess is abosolutely fentastic.I reccommend everyone to use this site </br><mark>#Love TRAVEL.&rdquo;</mark></p>
 						</blockquote>
-						<p class="author">John Doe, CEO <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span></p>
+						<p class="author">Anna, <a href="http://freehtml5.co/" target="_blank">London</a></p>
 					</div>
 					
 				</div>
@@ -526,9 +675,9 @@
 					<div class="box-testimony animate-box">
 						<blockquote>
 							<span class="quote"><span><i class="icon-quotes-right"></i></span></span>
-							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.&rdquo;</p>
+							<p>&ldquo; The site looks very attractive. Searching and booking process is much more simpler. Its an amazing experience. &rdquo;</p>
 						</blockquote>
-						<p class="author">John Doe, CEO <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span></p>
+						<p class="author">John, <a href="http://freehtml5.co/" target="_blank">Bangalore</a></p>
 					</div>
 					
 					
@@ -537,15 +686,15 @@
 					<div class="box-testimony animate-box">
 						<blockquote>
 							<span class="quote"><span><i class="icon-quotes-right"></i></span></span>
-							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+							<p>&ldquo; The traveling process is made easier and great. Loved the UI. I had a cool time travelling and exploring places. Thank you TRAVEL :) .&rdquo;</p>
 						</blockquote>
-						<p class="author">John Doe, Founder <a href="#">FREEHTML5.co</a> <span class="subtext">Creative Director</span></p>
+						<p class="author">Divya, <a href="#">Manglore</a></p>
 					</div>
 					
 				</div>
 			</div>
 		</div>
-	</div>-->
+	</div>
 		<footer>
 			<div id="footer">
 				<div class="container">
@@ -560,7 +709,7 @@
 								<li><a href="#">Delhi Flights</a></li>
 								<li><a href="#">Bangalore Flights</a></li>
 								<li><a href="#">Pune Flights</a></li>
-								<li><a href="#">Mumbai Flight</a></li>
+								<li><a href="#">Mumbai Flights</a></li>
 								<li><a href="#">Chennai Flights</a></li>
 							</ul>
 						</div>

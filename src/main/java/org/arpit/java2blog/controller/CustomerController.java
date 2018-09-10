@@ -24,7 +24,7 @@ public class CustomerController {
 		List<Customer> listOfCustomers = customerService.getAllCustomers();
 		model.addAttribute("customer", new Customer());
 		model.addAttribute("listOfCustomers", listOfCustomers);
-		return "customerDetails";
+		return "signUp";
 	}
 
 	@RequestMapping(value = "/", method = RequestMethod.GET, headers = "Accept=application/json")
@@ -59,7 +59,7 @@ public class CustomerController {
 			//customerService.updateCustomer(customer);
 		}
 
-		return "redirect:/getAllCustomers";
+		return "redirect:/signUp";
 	}
 
 	@RequestMapping(value = "/updateCustomer/{id}", method = RequestMethod.GET, headers = "Accept=application/json")

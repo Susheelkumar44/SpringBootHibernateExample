@@ -81,7 +81,7 @@
 			<div class="container">
 				<div class="nav-header">
 					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
-					<h1 id="fh5co-logo"><a href="index.html"><i class="icon-airplane"></i>Travel</a></h1>
+					<h1 id="fh5co-logo"><a href="index"><i class="icon-airplane"></i>Travel</a></h1>
 					<!-- START #fh5co-menu-wrap -->
 					<nav id="fh5co-menu-wrap" role="navigation">
 						<ul class="sf-menu" id="fh5co-primary-menu">
@@ -375,32 +375,32 @@
 				</div>
 				<div class="row">
 					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
-						<div href="#"><img src="images/Khajjiar1.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<div href="flights"><img src="images/Khajjiar1.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
 							<div class="desc">
 								<span></span>
 								<h3>Khajjiar</h3>
-								<span class="price"> INR.10,000</span>
-								<a class="btn btn-primary btn-outline" href="#">Book Flight <i class="icon-arrow-right22"></i></a>
+								<span class="price"> INR 10,000</span>
+								<a class="btn btn-primary btn-outline" href="flights">Book Flight <i class="icon-arrow-right22"></i></a>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
-						<div href="#"><img src="images/Shimla1.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<div href="flights"><img src="images/Shimla1.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
 							<div class="desc">
 								<span></span>
 								<h3>Shimla</h3>
-								<span class="price">INR.15,000</span>
-								<a class="btn btn-primary btn-outline" href="#">Book Flight<i class="icon-arrow-right22"></i></a>
+								<span class="price">INR 15,000</span>
+								<a class="btn btn-primary btn-outline" href="/flights">Book Flight<i class="icon-arrow-right22"></i></a>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
-						<div href="#"><img src="images/Ladakh1.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<div href="flights"><img src="images/Ladakh1.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
 							<div class="desc">
 								<span></span>
 								<h3>Ladakh</h3>
 								<span class="price">INR.17,000</span>
-								<a class="btn btn-primary btn-outline" href="#">Book Flight<i class="icon-arrow-right22"></i></a>
+								<a class="btn btn-primary btn-outline" href="flights">Book Flight<i class="icon-arrow-right22"></i></a>
 							</div>
 						</div>
 					</div>
@@ -505,28 +505,28 @@
 					<div class="col-md-12">
 						<ul id="fh5co-destination-list" class="animate-box">
 							<li class="one-forth text-center" style="background-image: url(images/place-1.jpg); ">
-								<a href="#">
+								<a href="hotels">
 									<div class="case-studies-summary">
 										<h2>Kasol</h2>
 									</div>
 								</a>
 							</li>
 							<li class="one-forth text-center" style="background-image: url(images/place-2.jpg); ">
-								<a href="#">
+								<a href="hotels">
 									<div class="case-studies-summary">
 										<h2>Nainital</h2>
 									</div>
 								</a>
 							</li>
 							<li class="one-forth text-center" style="background-image: url(images/place-3.jpg); ">
-								<a href="#">
+								<a href="hotels">
 									<div class="case-studies-summary">
 										<h2>Ranthambore</h2>
 									</div>
 								</a>
 							</li>
 							<li class="one-forth text-center" style="background-image: url(images/place-4.jpg); ">
-								<a href="#">
+								<a href="hotels">
 									<div class="case-studies-summary">
 										<h2>Taj Mahal</h2>
 									</div>
@@ -534,7 +534,7 @@
 							</li>
 
 							<li class="one-forth text-center" style="background-image: url(images/place-5.jpg); ">
-								<a href="#">
+								<a href="hotels">
 									<div class="case-studies-summary">
 										<h2>Jaisalmer</h2>
 									</div>
@@ -548,35 +548,35 @@
 								</div>
 							</li>
 							<li class="one-forth text-center" style="background-image: url(images/place-6.jpg); ">
-								<a href="#">
+								<a href="hotels">
 									<div class="case-studies-summary">
 										<h2>Hampi</h2>
 									</div>
 								</a>
 							</li>
 							<li class="one-forth text-center" style="background-image: url(images/place-7.jpg); ">
-								<a href="#">
+								<a href="hotels">
 									<div class="case-studies-summary">
 										<h2>Dudhsagar Falls</h2>
 									</div>
 								</a>
 							</li>
 							<li class="one-forth text-center" style="background-image: url(images/place-8.jpg); ">
-								<a href="#">
+								<a href="hotels">
 									<div class="case-studies-summary">
 										<h2>Lonavala</h2>
 									</div>
 								</a>
 							</li>
 							<li class="one-forth text-center" style="background-image: url(images/place-9.jpg); ">
-								<a href="#">
+								<a href="hotels">
 									<div class="case-studies-summary">
 										<h2>Sakleshpur</h2>
 									</div>
 								</a>
 							</li>
 							<li class="one-forth text-center" style="background-image: url(images/place-10.jpg); ">
-								<a href="#">
+								<a href="hotels">
 									<div class="case-studies-summary">
 										<h2>Mysore</h2>
 									</div>
