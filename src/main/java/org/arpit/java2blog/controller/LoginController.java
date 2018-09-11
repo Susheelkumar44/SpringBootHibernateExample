@@ -33,8 +33,9 @@ public class LoginController {
 		Customer customer = customerService.validateCustomer(login);
 		
 		if(null != customer) {
-			mav = new ModelAndView("welcome");
+			mav = new ModelAndView("indexPostLogin");
 			mav.addObject("name", customer.getCustomerName());
+			
 		}
 		else {
 			mav = new ModelAndView("login");

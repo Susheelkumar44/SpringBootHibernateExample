@@ -105,7 +105,7 @@
 					<div class="container">
 						<div class="row" >
 							<div class="col-sm-5 col-md-5">
-								<a href="index" id="main-logo">Travel</a> 
+								<a href="index" id="main-logo"></a> 
 								
 								 <div class="tabulation animate-box">
 

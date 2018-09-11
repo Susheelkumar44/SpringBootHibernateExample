@@ -7,7 +7,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Travel &mdash; 100% Free Fully Responsive HTML5 Template by FREEHTML5.co</title>
+	<title>Travel</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
@@ -97,12 +97,12 @@
 	<form action = "/flightsearch">
 		<div class="fh5co-hero">
 			<div class="fh5co-overlay"></div>
-			<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/paris3.jpg);">
+			<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_3.jpg);">
 				<div class="desc">
 					<div class="container">
 						<div class="row" >
 							<div class="col-sm-5 col-md-5">
-								<a href="index.html" id="main-logo">Travel</a> 
+								<a href="index" id="main-logo"></a> 
 								
 								 <div class="tabulation animate-box">
 
@@ -122,19 +122,19 @@
 									<div class="tab-content">
 									 <div role="tabpanel" class="tab-pane active" id="flights">
 										<div class="row">
-											<div class="col-xs-12">
+											<div class="col-xxs-12 col-xs-6 mt">
 												<div class="input-field">
 													<label for="source">From:</label>
 													<input type="text" class="form-control" name="source" />
 												</div>
 											</div>
-											<div class="col-xs-12">
+											<div class="col-xxs-12 col-xs-6 mt">
 												<div class="input-field">
 													<label for="destination">To:</label>
 													<input type="text" class="form-control" name="destination" />
 												</div>
 											</div>
-											<div class="col-xs-12">
+											<div class="col-xxs-12 col-xs-6 mt">
 												<div class="input-field">
 													<label for="departdate">Depart:</label>
 													<input type="text" class="form-control" name="departdate" "/>
@@ -297,13 +297,7 @@
 								</div>
 								
 							</div>
-							<div class="desc2 animate-box">
-								<div class="col-sm-7 col-sm-push-1 col-md-7 col-md-push-1">
-									<!-- <h2>Exclusive Limited Time Offer</h2>
-									<h3>Fly to Delhi from Bangalore</h3>
-									<span class="price">INR 3,500</span> -->
-									<!-- <p><a class="btn btn-primary btn-lg" href="#">Get Started</a></p> -->
-								</div>
+							
 
 							<!--<div class="desc2 animate-box">
 								<div class="col-sm-7 col-sm-push-1 col-md-7 col-md-push-1">

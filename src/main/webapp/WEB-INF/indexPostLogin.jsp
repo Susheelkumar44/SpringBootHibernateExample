@@ -1,22 +1,28 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html>
 
 
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Travel</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
-	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-	<meta name="author" content="FREEHTML5.CO" />
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Travel</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+<meta name="keywords"
+	content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+<meta name="author" content="FREEHTML5.CO" />
 
-  <!-- 
+<!-- 
 	//////////////////////////////////////////////////////
 
 	FREE HTML5 TEMPLATE 
@@ -30,63 +36,67 @@
 	//////////////////////////////////////////////////////
 	 -->
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+<!-- Facebook and Twitter integration -->
+<meta property="og:title" content="" />
+<meta property="og:image" content="" />
+<meta property="og:url" content="" />
+<meta property="og:site_name" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:title" content="" />
+<meta name="twitter:image" content="" />
+<meta name="twitter:url" content="" />
+<meta name="twitter:card" content="" />
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<link rel="shortcut icon" href="favicon.ico">
 
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Superfish -->
-	<link rel="stylesheet" href="css/superfish.css">
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<!-- Date Picker -->
-	<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
-	<!-- CS Select -->
-	<link rel="stylesheet" href="css/cs-select.css">
-	<link rel="stylesheet" href="css/cs-skin-border.css">
-	
-	<link rel="stylesheet" href="css/style.css">
+<link
+	href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300'
+	rel='stylesheet' type='text/css'>
+
+<!-- Animate.css -->
+<link rel="stylesheet" href="css/animate.css">
+<!-- Icomoon Icon Fonts-->
+<link rel="stylesheet" href="css/icomoon.css">
+<!-- Bootstrap  -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<!-- Superfish -->
+<link rel="stylesheet" href="css/superfish.css">
+<!-- Magnific Popup -->
+<link rel="stylesheet" href="css/magnific-popup.css">
+<!-- Date Picker -->
+<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+<!-- CS Select -->
+<link rel="stylesheet" href="css/cs-select.css">
+<link rel="stylesheet" href="css/cs-skin-border.css">
+
+<link rel="stylesheet" href="css/style.css">
 
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
+<!-- Modernizr JS -->
+<script src="js/modernizr-2.6.2.min.js"></script>
+<!-- FOR IE9 below -->
+<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
-	</head>
-	<body>
-		<div id="fh5co-wrapper">
+</head>
+<body>
+	<div id="fh5co-wrapper">
 		<div id="fh5co-page">
 
-		<header id="fh5co-header-section" class="sticky-banner">
-			<div class="container">
-				<div class="nav-header">
-					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
-					<h1 id="fh5co-logo"><a href="index"><i class="icon-airplane"></i>Travel</a></h1>
-					<!-- START #fh5co-menu-wrap -->
-					<nav id="fh5co-menu-wrap" role="navigation">
-						<ul class="sf-menu" id="fh5co-primary-menu">
-							<li class="active"><a href="index.html"></a></li>
-							<!-- <li>
+			<header id="fh5co-header-section" class="sticky-banner">
+				<div class="container">
+					<div class="nav-header">
+						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+						<h1 id="fh5co-logo">
+							<a href="index"><i class="icon-airplane"></i>Travel</a>
+						</h1>
+						<!-- START #fh5co-menu-wrap -->
+						<nav id="fh5co-menu-wrap" role="navigation">
+							<ul class="sf-menu" id="fh5co-primary-menu">
+								<li class="active"><a href="index"></a></li>
+								<!-- <li>
 								<a href="vacation.html" class="fh5co-sub-ddown">Vacations</a>
 								<ul class="fh5co-sub-menu">
 									<li><a href="#">Family</a></li>
@@ -96,20 +106,21 @@
 									<li><a href="#">Django &amp; Python</a></li>
 								</ul>
 							</li> -->
-							<li><a href="flights">Flights</a></li>
-							<li><a href="hotels">Hotels</a></li>
-							<li><a href="login">Login</a></li>
-							<li><a href="signUp">SignUp</a></li>
-							<li><a href="contact">Contact</a></li>
-						</ul>
-					</nav>
+								<li><a href="flights">Flights</a></li>
+								<li><a href="hotels">Hotels</a></li>
+								<li><a href="login">Login</a></li>
+								<li><a href="signUp">SignUp </a></li>
+								<li><a href="contact">Contact</a></li>
+								<li><c:out value="Hello, ${name}"></c:out></li>
+							</ul>
+						</nav>
+					</div>
 				</div>
-			</div>
-		</header>
+			</header>
 
-		<!-- end:header-top -->
-	
-		<!--<div class="fh5co-hero">
+			<!-- end:header-top -->
+
+			<!--<div class="fh5co-hero">
 			<div class="fh5co-overlay"></div> 
 			 <class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/paris3.jpg);"> 
 			 <div cla<divss="container">
@@ -131,7 +142,7 @@
 							<div class="col-sm-5 col-md-5">
 								<div class="tabulation animate-box"> -->
 
-								  <!-- Nav tabs 
+			<!-- Nav tabs 
 								   <ul class="nav nav-tabs" role="tablist">
 								      <li role="presentation" class="active">
 								      	<a href="#flights" aria-controls="flights" role="tab" data-toggle="tab">Flights</a>
@@ -144,7 +155,7 @@
 								      </li>
 								   </ul> -->
 
-								   <!-- Tab panes
+			<!-- Tab panes
 									<div class="tab-content">
 									 <div role="tabpanel" class="tab-pane active" id="flights">
 										<div class="row">
@@ -351,7 +362,7 @@
 									<h3>Fly to Hong Kong via Los Angeles, USA</h3>
 									<span class="price">$599</span>
 									<!-- <p><a class="btn btn-primary btn-lg" href="#">Get Started</a></p> -->
-								<!--</div>
+			<!--</div>
 							</div>
 						</div> 
 					</div> 
@@ -359,56 +370,78 @@
 			</div>
 		</div>
 	</div> -->
-	<!-- <div class="fh5co-hero">
+			<!-- <div class="fh5co-hero">
 			<div class="fh5co-overlay"></div> 
 			 <class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/paris3.jpg);"> -->
-		
-           <div class="container">
-		   <div id="fh5co-tours" class="fh5co-section-gray">
-		   <div class="row">
-		   <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-						<h3>COME, DISCOVER INDIA</h3>
-						<p><b>Travelling Isn't Always About Running Away From Things, Sometimes It's About Running Into What You Truely Want.</b></p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
-						<div href="flights"><img src="images/Khajjiar1.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-							<div class="desc">
-								<span></span>
-								<h3>Khajjiar</h3>
-								<span class="price"> INR 10,000</span>
-								<a class="btn btn-primary btn-outline" href="flights">Book Flight <i class="icon-arrow-right22"></i></a>
-							</div>
+
+			<div class="container">
+				<div id="fh5co-tours" class="fh5co-section-gray">
+					<div class="row">
+						<div
+							class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+							<h3>COME, DISCOVER INDIA</h3>
+							<p>
+								<b>Travelling Isn't Always About Running Away From Things,
+									Sometimes It's About Running Into What You Truely Want.</b>
+							</p>
 						</div>
 					</div>
-					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
-						<div href="flights"><img src="images/Shimla1.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-							<div class="desc">
-								<span></span>
-								<h3>Shimla</h3>
-								<span class="price">INR 15,000</span>
-								<a class="btn btn-primary btn-outline" href="/flights">Book Flight<i class="icon-arrow-right22"></i></a>
+					<div class="row">
+						<div class="col-md-4 col-sm-6 fh5co-tours animate-box"
+							data-animate-effect="fadeIn">
+							<div href="flights">
+								<img src="images/Khajjiar1.jpg"
+									alt="Free HTML5 Website Template by FreeHTML5.co"
+									class="img-responsive">
+								<div class="desc">
+									<span></span>
+									<h3>Khajjiar</h3>
+									<span class="price"> INR 10,000</span> <a
+										class="btn btn-primary btn-outline" href="flights">Book
+										Flight <i class="icon-arrow-right22"></i>
+									</a>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
-						<div href="flights"><img src="images/Ladakh1.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-							<div class="desc">
-								<span></span>
-								<h3>Ladakh</h3>
-								<span class="price">INR.17,000</span>
-								<a class="btn btn-primary btn-outline" href="flights">Book Flight<i class="icon-arrow-right22"></i></a>
+						<div class="col-md-4 col-sm-6 fh5co-tours animate-box"
+							data-animate-effect="fadeIn">
+							<div href="flights">
+								<img src="images/Shimla1.jpg"
+									alt="Free HTML5 Website Template by FreeHTML5.co"
+									class="img-responsive">
+								<div class="desc">
+									<span></span>
+									<h3>Shimla</h3>
+									<span class="price">INR 15,000</span> <a
+										class="btn btn-primary btn-outline" href="/flights">Book
+										Flight<i class="icon-arrow-right22"></i>
+									</a>
+								</div>
 							</div>
 						</div>
-					</div>
-					<!--<div class="col-md-12 text-center animate-box">
+						<div class="col-md-4 col-sm-6 fh5co-tours animate-box"
+							data-animate-effect="fadeIn">
+							<div href="flights">
+								<img src="images/Ladakh1.jpg"
+									alt="Free HTML5 Website Template by FreeHTML5.co"
+									class="img-responsive">
+								<div class="desc">
+									<span></span>
+									<h3>Ladakh</h3>
+									<span class="price">INR.17,000</span> <a
+										class="btn btn-primary btn-outline" href="flights">Book
+										Flight<i class="icon-arrow-right22"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!--<div class="col-md-12 text-center animate-box">
 						<p><a class="btn btn-primary btn-outline btn-lg" href="#">See All Offers <i class="icon-arrow-right22"></i></a></p>
 					</div> -->
+					</div>
 				</div>
 			</div>
-       </div>
-		<!-- <div id="fh5co-features">
+			<!-- <div id="fh5co-features">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 animate-box">
@@ -496,97 +529,97 @@
 			</div>
 		</div> -->
 
-		
-		<div id="fh5co-destination">
-			<div class="tour-fluid">
-				<div class="row">
-					<div class="col-md-12">
-						<ul id="fh5co-destination-list" class="animate-box">
-							<li class="one-forth text-center" style="background-image: url(images/place-1.jpg); ">
-								<a href="hotels">
-									<div class="case-studies-summary">
-										<h2>Kasol</h2>
-									</div>
-								</a>
-							</li>
-							<li class="one-forth text-center" style="background-image: url(images/place-2.jpg); ">
-								<a href="hotels">
-									<div class="case-studies-summary">
-										<h2>Nainital</h2>
-									</div>
-								</a>
-							</li>
-							<li class="one-forth text-center" style="background-image: url(images/place-3.jpg); ">
-								<a href="hotels">
-									<div class="case-studies-summary">
-										<h2>Ranthambore</h2>
-									</div>
-								</a>
-							</li>
-							<li class="one-forth text-center" style="background-image: url(images/place-4.jpg); ">
-								<a href="hotels">
-									<div class="case-studies-summary">
-										<h2>Taj Mahal</h2>
-									</div>
-								</a>
-							</li>
 
-							<li class="one-forth text-center" style="background-image: url(images/place-5.jpg); ">
-								<a href="hotels">
-									<div class="case-studies-summary">
-										<h2>Jaisalmer</h2>
+			<div id="fh5co-destination">
+				<div class="tour-fluid">
+					<div class="row">
+						<div class="col-md-12">
+							<ul id="fh5co-destination-list" class="animate-box">
+								<li class="one-forth text-center"
+									style="background-image: url(images/place-1.jpg);"><a
+									href="hotels">
+										<div class="case-studies-summary">
+											<h2>Kasol</h2>
+										</div>
+								</a></li>
+								<li class="one-forth text-center"
+									style="background-image: url(images/place-2.jpg);"><a
+									href="hotels">
+										<div class="case-studies-summary">
+											<h2>Nainital</h2>
+										</div>
+								</a></li>
+								<li class="one-forth text-center"
+									style="background-image: url(images/place-3.jpg);"><a
+									href="hotels">
+										<div class="case-studies-summary">
+											<h2>Ranthambore</h2>
+										</div>
+								</a></li>
+								<li class="one-forth text-center"
+									style="background-image: url(images/place-4.jpg);"><a
+									href="hotels">
+										<div class="case-studies-summary">
+											<h2>Taj Mahal</h2>
+										</div>
+								</a></li>
+
+								<li class="one-forth text-center"
+									style="background-image: url(images/place-5.jpg);"><a
+									href="hotels">
+										<div class="case-studies-summary">
+											<h2>Jaisalmer</h2>
+										</div>
+								</a></li>
+								<li class="one-half text-center">
+									<div class="title-bg">
+										<div class="case-studies-summary">
+											<h2>Most Popular Destinations</h2>
+										</div>
 									</div>
-								</a>
-							</li>
-							<li class="one-half text-center">
-								<div class="title-bg">
-									<div class="case-studies-summary">
-										<h2>Most Popular Destinations</h2>
-									</div>
-								</div>
-							</li>
-							<li class="one-forth text-center" style="background-image: url(images/place-6.jpg); ">
-								<a href="hotels">
-									<div class="case-studies-summary">
-										<h2>Hampi</h2>
-									</div>
-								</a>
-							</li>
-							<li class="one-forth text-center" style="background-image: url(images/place-7.jpg); ">
-								<a href="hotels">
-									<div class="case-studies-summary">
-										<h2>Dudhsagar Falls</h2>
-									</div>
-								</a>
-							</li>
-							<li class="one-forth text-center" style="background-image: url(images/place-8.jpg); ">
-								<a href="hotels">
-									<div class="case-studies-summary">
-										<h2>Lonavala</h2>
-									</div>
-								</a>
-							</li>
-							<li class="one-forth text-center" style="background-image: url(images/place-9.jpg); ">
-								<a href="hotels">
-									<div class="case-studies-summary">
-										<h2>Sakleshpur</h2>
-									</div>
-								</a>
-							</li>
-							<li class="one-forth text-center" style="background-image: url(images/place-10.jpg); ">
-								<a href="hotels">
-									<div class="case-studies-summary">
-										<h2>Mysore</h2>
-									</div>
-								</a>
-							</li>
-						</ul>		
+								</li>
+								<li class="one-forth text-center"
+									style="background-image: url(images/place-6.jpg);"><a
+									href="hotels">
+										<div class="case-studies-summary">
+											<h2>Hampi</h2>
+										</div>
+								</a></li>
+								<li class="one-forth text-center"
+									style="background-image: url(images/place-7.jpg);"><a
+									href="hotels">
+										<div class="case-studies-summary">
+											<h2>Dudhsagar Falls</h2>
+										</div>
+								</a></li>
+								<li class="one-forth text-center"
+									style="background-image: url(images/place-8.jpg);"><a
+									href="hotels">
+										<div class="case-studies-summary">
+											<h2>Lonavala</h2>
+										</div>
+								</a></li>
+								<li class="one-forth text-center"
+									style="background-image: url(images/place-9.jpg);"><a
+									href="hotels">
+										<div class="case-studies-summary">
+											<h2>Sakleshpur</h2>
+										</div>
+								</a></li>
+								<li class="one-forth text-center"
+									style="background-image: url(images/place-10.jpg);"><a
+									href="hotels">
+										<div class="case-studies-summary">
+											<h2>Mysore</h2>
+										</div>
+								</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<!-- <div id="fh5co-blog-section" class="fh5co-section-gray">
+			<!-- <div id="fh5co-blog-section" class="fh5co-section-gray">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
@@ -649,126 +682,153 @@
 
 			</div>
 		</div> -->
-		
-		<!-- fh5co-blog-section -->
-		<div id="fh5co-testimonial" style="background-image:url(images/img_bg_1.jpg);">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Happy Clients</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="box-testimony animate-box">
-						<blockquote>
-							<span class="quote"><span><i class="icon-quotes-right"></i></span></span>
-							<p>&ldquo; This site is just amazing and simple. Searching booking proceess is abosolutely fentastic.I reccommend everyone to use this site </br><mark>#Love TRAVEL.&rdquo;</mark></p>
-						</blockquote>
-						<p class="author">Anna, <a href="http://freehtml5.co/" target="_blank">London</a></p>
-					</div>
-					
-				</div>
-				<div class="col-md-4">
-					<div class="box-testimony animate-box">
-						<blockquote>
-							<span class="quote"><span><i class="icon-quotes-right"></i></span></span>
-							<p>&ldquo; The site looks very attractive. Searching and booking process is much more simpler. Its an amazing experience. &rdquo;</p>
-						</blockquote>
-						<p class="author">John, <a href="http://freehtml5.co/" target="_blank">Bangalore</a></p>
-					</div>
-					
-					
-				</div>
-				<div class="col-md-4">
-					<div class="box-testimony animate-box">
-						<blockquote>
-							<span class="quote"><span><i class="icon-quotes-right"></i></span></span>
-							<p>&ldquo; The traveling process is made easier and great. Loved the UI. I had a cool time travelling and exploring places. Thank you TRAVEL :) .&rdquo;</p>
-						</blockquote>
-						<p class="author">Divya, <a href="#">Manglore</a></p>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	</div>
-		<footer>
-			<div id="footer">
+
+			<!-- fh5co-blog-section -->
+			<div id="fh5co-testimonial"
+				style="background-image: url(images/img_bg_1.jpg);">
 				<div class="container">
-					<div class="row row-bottom-padded-md">
-						<div class="col-md-2 col-sm-2 col-xs-12 fh5co-footer-link">
-							<h3>About Travel</h3>
-							<p> We are a leading online travel company in India providing a 'best in class' customer experience. <br/> - <b>It's All About Travelling</b></p>
-							</div>
-						<div class="col-md-2 col-sm-2 col-xs-12 fh5co-footer-link">
-							<h3>Top Flights Routes</h3>
-							<ul>
-								<li><a href="#">Delhi Flights</a></li>
-								<li><a href="#">Bangalore Flights</a></li>
-								<li><a href="#">Pune Flights</a></li>
-								<li><a href="#">Mumbai Flights</a></li>
-								<li><a href="#">Chennai Flights</a></li>
-							</ul>
-						</div>
-						<div class="col-md-2 col-sm-2 col-xs-12 fh5co-footer-link">
-							<h3>Top Hotels</h3>
-							<ul>
-								<li><a href="#">Taj Lake Palace Udaipur</a></li>
-								<li><a href="#">The Leela Palace NewDelhi</a></li>
-								<li><a href="#">The Paul Bangalore</a></li>
-								<li><a href="#">The Tamara Coorg</a></li>
-							</ul>
-						</div>
-						<div class="col-md-2 col-sm-2 col-xs-12 fh5co-footer-link">
-							<h3>Interest</h3>
-							<ul>
-								<li><a href="#">Beaches</a></li>
-								<li><a href="#">Family Travel</a></li>
-								<li><a href="#">Budget Travel</a></li>
-								<li><a href="#">Food &amp; Drink</a></li>
-								<li><a href="#">Honeymoon and Romance</a></li>
-							</ul>
-						</div>
-						<div class="col-md-2 col-sm-2 col-xs-12 fh5co-footer-link">
-							<h3>Best Places</h3>
-							<ul>
-								<li><a href="#">Agra</a></li>
-								<li><a href="#">Delhi</a></li>
-								<li><a href="#">Jaipur</a></li>
-								<li><a href="#">Varanasi</a></li>
-								<li><a href="#">Mumbai</a></li>
-								<li><a href="#">Goa</a></li>
-								<li><a href="#">Manali</a></li>
-								<li><a href="#">Bengaluru</a></li>
-							</ul>
-						</div>
-						<div class="col-md-2 col-sm-2 col-xs-12 fh5co-footer-link">
-							<h3>Affordable</h3>
-							<ul>
-								<li><a href="#">Food &amp; Drink</a></li>
-								<li><a href="#">Fare Flights</a></li>
-							</ul>
+					<div class="row animate-box">
+						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+							<h2>Happy Clients</h2>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-6 col-md-offset-3 text-center">
-							<p class="fh5co-social-icons">
-								<a href="#"><i class="icon-twitter2"></i></a>
-								<a href="#"><i class="icon-facebook2"></i></a>
-								<a href="#"><i class="icon-instagram"></i></a>
-							</p>
-							<p>Copyright 2018 <a href="#"> Travel </a>. All Rights Reserved. <br>Made with <i class="icon-heart3"></i> by <a href="http://freehtml5.co/" target="_blank">www.travel.com</a></p>
+						<div class="col-md-4">
+							<div class="box-testimony animate-box">
+								<blockquote>
+									<span class="quote"><span><i
+											class="icon-quotes-right"></i></span></span>
+									<p>
+										&ldquo; This site is just amazing and simple. Searching
+										booking proceess is abosolutely fentastic.I reccommend
+										everyone to use this site </br>
+										<mark>#Love TRAVEL.&rdquo;</mark>
+									</p>
+								</blockquote>
+								<p class="author">
+									Anna, <a href="http://freehtml5.co/" target="_blank">London</a>
+								</p>
+							</div>
+
+						</div>
+						<div class="col-md-4">
+							<div class="box-testimony animate-box">
+								<blockquote>
+									<span class="quote"><span><i
+											class="icon-quotes-right"></i></span></span>
+									<p>&ldquo; The site looks very attractive. Searching and
+										booking process is much more simpler. Its an amazing
+										experience. &rdquo;</p>
+								</blockquote>
+								<p class="author">
+									John, <a href="http://freehtml5.co/" target="_blank">Bangalore</a>
+								</p>
+							</div>
+
+
+						</div>
+						<div class="col-md-4">
+							<div class="box-testimony animate-box">
+								<blockquote>
+									<span class="quote"><span><i
+											class="icon-quotes-right"></i></span></span>
+									<p>&ldquo; The traveling process is made easier and great.
+										Loved the UI. I had a cool time travelling and exploring
+										places. Thank you TRAVEL :) .&rdquo;</p>
+								</blockquote>
+								<p class="author">
+									Divya, <a href="#">Manglore</a>
+								</p>
+							</div>
+
 						</div>
 					</div>
 				</div>
 			</div>
-		</footer>
+			<footer>
+				<div id="footer">
+					<div class="container">
+						<div class="row row-bottom-padded-md">
+							<div class="col-md-2 col-sm-2 col-xs-12 fh5co-footer-link">
+								<h3>About Travel</h3>
+								<p>
+									We are a leading online travel company in India providing a
+									'best in class' customer experience. <br /> - <b>It's All
+										About Travelling</b>
+								</p>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-12 fh5co-footer-link">
+								<h3>Top Flights Routes</h3>
+								<ul>
+									<li><a href="#">Delhi Flights</a></li>
+									<li><a href="#">Bangalore Flights</a></li>
+									<li><a href="#">Pune Flights</a></li>
+									<li><a href="#">Mumbai Flights</a></li>
+									<li><a href="#">Chennai Flights</a></li>
+								</ul>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-12 fh5co-footer-link">
+								<h3>Top Hotels</h3>
+								<ul>
+									<li><a href="#">Taj Lake Palace Udaipur</a></li>
+									<li><a href="#">The Leela Palace NewDelhi</a></li>
+									<li><a href="#">The Paul Bangalore</a></li>
+									<li><a href="#">The Tamara Coorg</a></li>
+								</ul>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-12 fh5co-footer-link">
+								<h3>Interest</h3>
+								<ul>
+									<li><a href="#">Beaches</a></li>
+									<li><a href="#">Family Travel</a></li>
+									<li><a href="#">Budget Travel</a></li>
+									<li><a href="#">Food &amp; Drink</a></li>
+									<li><a href="#">Honeymoon and Romance</a></li>
+								</ul>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-12 fh5co-footer-link">
+								<h3>Best Places</h3>
+								<ul>
+									<li><a href="#">Agra</a></li>
+									<li><a href="#">Delhi</a></li>
+									<li><a href="#">Jaipur</a></li>
+									<li><a href="#">Varanasi</a></li>
+									<li><a href="#">Mumbai</a></li>
+									<li><a href="#">Goa</a></li>
+									<li><a href="#">Manali</a></li>
+									<li><a href="#">Bengaluru</a></li>
+								</ul>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-12 fh5co-footer-link">
+								<h3>Affordable</h3>
+								<ul>
+									<li><a href="#">Food &amp; Drink</a></li>
+									<li><a href="#">Fare Flights</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3 text-center">
+								<p class="fh5co-social-icons">
+									<a href="#"><i class="icon-twitter2"></i></a> <a href="#"><i
+										class="icon-facebook2"></i></a> <a href="#"><i
+										class="icon-instagram"></i></a>
+								</p>
+								<p>
+									Copyright 2018 <a href="#"> Travel </a>. All Rights Reserved. <br>Made
+									with <i class="icon-heart3"></i> by <a
+										href="http://freehtml5.co/" target="_blank">www.travel.com</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
 
-	
 
-	</div>
-	<!-- END fh5co-page -->
+
+		</div>
+		<!-- END fh5co-page -->
 
 	</div>
 	<!-- END fh5co-wrapper -->
@@ -798,10 +858,10 @@
 	<!-- CS Select -->
 	<script src="js/classie.js"></script>
 	<script src="js/selectFx.js"></script>
-	
+
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
 
-	</body>
+</body>
 </html>
 

@@ -12,9 +12,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Travel</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
-	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-	<meta name="author" content="FREEHTML5.CO" />
+	<meta name="description" content="Travel Site" />
+	<meta name="keywords" content="travel, hotel, flight, India" />
+	<meta name="author" content="www.travel.com" />
 
   <!-- 
 	//////////////////////////////////////////////////////
@@ -105,7 +105,7 @@
 					<div class="container">
 						<div class="row" >
 							<div class="col-sm-5 col-md-5">
-								<a href="index" id="main-logo">Travel</a> 
+								<!-- <a href="index" id="main-logo">Travel</a>  -->
 								
 								 <div class="tabulation animate-box">
 
@@ -169,12 +169,13 @@
 											<div class="col-xs-12">
 												<input type="submit" class="btn btn-primary btn-block" value="SignUp">
 											</div>
-										</div>
+										</div><br>
+										<c:if test="${!empty listOfCustomers}">
+<h3 style="text-align:center; color:black;">You have Successfully registered</h3>
+</c:if>
 									 </div>
 									 </form:form>
-									<c:if test="${!empty listOfCustomers}">
-<h3 style="text-align:center">You have Successfully registered</h3>
-</c:if>
+									
 									
 									 <!--<div role="tabpanel" class="tab-pane" id="hotels">
 									 	<div class="row">

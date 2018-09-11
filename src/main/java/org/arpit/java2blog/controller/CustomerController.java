@@ -35,10 +35,14 @@ public class CustomerController {
 	public String goTologinPage() {
 		return "login";
 	}
-	/*@RequestMapping(value = "/flights", method = RequestMethod.GET, headers = "Accept=application/json")
-	public String goToflightPage() {
-		return "flights";
-	}*/
+	@RequestMapping(value = "/contact", method = RequestMethod.GET, headers = "Accept=application/json")
+	public String goToContactPage() {
+		return "contact";
+	}
+	@RequestMapping(value = "/index", method = RequestMethod.GET, headers = "Accept=application/json")
+	public String goToHomePageOnClickLogo() {
+		return "index";
+	}
 	@RequestMapping(value = "/hotels", method = RequestMethod.GET, headers = "Accept=application/json")
 	public String goTohotelPage() {
 		return "hotels";

@@ -57,6 +57,7 @@ public class CustomerService {
 	public Customer validateCustomer(Login login) {
 		String sql = "select * from customer where email='" + login.getEmail() + "' and password='" + login.getPassword() + "'";
 		List<Customer> customers = jdbcTemplate.query(sql, new CustomerMapper());
+		System.out.println(customers.size() > 0 ? customers.get(0) : null);
 		return customers.size() > 0 ? customers.get(0) : null;
 	}
 }
