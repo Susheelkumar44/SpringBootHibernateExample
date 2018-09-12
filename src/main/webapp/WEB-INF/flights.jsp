@@ -78,7 +78,7 @@
 			<div class="container">
 				<div class="nav-header">
 					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
-					<h1 id="fh5co-logo"><a href="index.jsp"><i class="icon-airplane"></i>Travel</a></h1>
+					<h1 id="fh5co-logo"><a href="index"><i class="icon-airplane"></i>Travel</a></h1>
 					<!-- START #fh5co-menu-wrap -->
 					<nav id="fh5co-menu-wrap" role="navigation">
 						<ul class="sf-menu" id="fh5co-primary-menu">
@@ -97,7 +97,7 @@
 	<form action = "/flightsearch">
 		<div class="fh5co-hero">
 			<div class="fh5co-overlay"></div>
-			<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_3.jpg);">
+			<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/plane.jpg);">
 				<div class="desc">
 					<div class="container">
 						<div class="row" >
@@ -346,7 +346,7 @@
 						</div>
 					</div>
 					<div class="col-md-6 animate-box">
-						<img class="img-responsive" src="images/paris3.jpg" alt="travel">
+						<img class="img-responsive" src="images/cover_bg_3.jpg" alt="travel">
 						<a href="#" class="flight-book">
 							<div class="plane-name">
 								<span class="p-flight">United States Airways</span>

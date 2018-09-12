@@ -311,7 +311,7 @@
 									<p>HandCrafted by <a href="http://frehtml5.co/" target="_blank" class="fh5co-site-name">www.travel.com</a></p>
 									<h2>Exclusive Limited Time Offer</h2>
 									<h3>Fly to Delhi from Bangalore</h3>
-									<span class="price">INR.2,000</span>
+									<span class="price">&#8377; 2,000</span>
 									<!-- <p><a class="btn btn-primary btn-lg" href="#">Get Started</a></p> -->
 								</div>
 							<!--<div class="desc2 animate-box">

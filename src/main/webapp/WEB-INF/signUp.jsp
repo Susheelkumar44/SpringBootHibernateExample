@@ -314,7 +314,7 @@
 									
 									<h2>Exclusive Limited Time Offer</h2>
 									<h3>Fly to NewDelhi from Bangalore</h3>
-									<span class="price">INR 4000</span>
+									<span class="price">&#8377; 4000</span>
 									<h4 style="color:white;">Then Y Waiting Hurry Up!!!</h4>
 									<!-- <p><a class="btn btn-primary btn-lg" href="#">Get Started</a></p> -->
 								</div>
