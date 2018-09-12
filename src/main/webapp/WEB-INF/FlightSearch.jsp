@@ -89,11 +89,11 @@
 					<!-- START #fh5co-menu-wrap -->
 					<nav id="fh5co-menu-wrap" role="navigation">
 						<ul class="sf-menu" id="fh5co-primary-menu">
-							<li><a href="flights">Flights</a></li>
+							<li class="active"><a href="flights">Flights</a></li>
 							<li><a href="hotels">Hotels</a></li>
 							<li><a href="login">Login</a></li>
 							<li><a href="signUp">Sign Up</a></li>
-							<li class="active"><a href="contact">Contact</a></li>
+							<li><a href="contact">Contact</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -111,7 +111,7 @@
 				</div>
 				<form action="">
 					<div class="row animate-box">
-						<div class="col-md-6" >
+						<div class="center-block">
 							<h3 class="section-title"></h3>
 							<c:if test="${empty msg}">
 	<h3>No flights available</h3>

@@ -100,7 +100,7 @@
 	<form:form id="loginForm" modelAttribute="login" action="loginProcess" method="post">
 		<div class="fh5co-hero">
 			<div class="fh5co-overlay"></div>
-			<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_3.jpg);">
+			<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/paris3.jpg);">
 				<div class="desc">
 					<div class="container">
 						<div class="row" >
@@ -360,7 +360,7 @@
 						</div>
 					</div>
 					<div class="col-md-6 animate-box">
-						<img class="img-responsive" src="images/cover_bg_3.jpg" alt="travel">
+						<img class="img-responsive" src="images/paris3.jpg" alt="travel">
 						<a href="#" class="flight-book">
 							<div class="plane-name">
 								<span class="p-flight">United States Airways</span>

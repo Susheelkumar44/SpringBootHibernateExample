@@ -122,19 +122,19 @@
 									<div class="tab-content">
 									 <div role="tabpanel" class="tab-pane active" id="flights">
 										<div class="row">
-											<div class="col-xxs-12 col-xs-6 mt">
+											<div class="col-xs-12">
 												<div class="input-field">
 													<label for="source">From:</label>
 													<input type="text" class="form-control" name="source" />
 												</div>
 											</div>
-											<div class="col-xxs-12 col-xs-6 mt">
+											<div class="col-xs-12">
 												<div class="input-field">
 													<label for="destination">To:</label>
 													<input type="text" class="form-control" name="destination" />
 												</div>
 											</div>
-											<div class="col-xxs-12 col-xs-6 mt">
+											<div class="col-xs-12">
 												<div class="input-field">
 													<label for="departdate">Depart:</label>
 													<input type="text" class="form-control" name="departdate" "/>
@@ -346,7 +346,7 @@
 						</div>
 					</div>
 					<div class="col-md-6 animate-box">
-						<img class="img-responsive" src="images/cover_bg_3.jpg" alt="travel">
+						<img class="img-responsive" src="images/paris3.jpg" alt="travel">
 						<a href="#" class="flight-book">
 							<div class="plane-name">
 								<span class="p-flight">United States Airways</span>

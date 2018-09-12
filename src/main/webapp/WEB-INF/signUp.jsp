@@ -87,8 +87,8 @@
 						<ul class="sf-menu" id="fh5co-primary-menu">
 							<li><a href="flights">Flights</a></li>
 							<li><a href="hotels">Hotels</a></li>
-							<li class="active"><a href="login">Login</a></li>
-							<li><a href="signUp">SignUp</a></li>
+							<li><a href="login">Login</a></li>
+							<li class="active"><a href="signUp">Sign Up</a></li>
 							<li><a href="contact">Contact</a></li>	
 						</ul>
 					</nav>
@@ -100,7 +100,7 @@
 	<form:form method="post" modelAttribute="customer" action="${pageContext.request.contextPath}/addCustomer">
 		<div class="fh5co-hero">
 			<div class="fh5co-overlay"></div>
-			<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_3.jpg);">
+			<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/paris3.jpg);">
 				<div class="desc">
 					<div class="container">
 						<div class="row" >
