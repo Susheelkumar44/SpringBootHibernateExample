@@ -192,9 +192,10 @@ public class FlightDaoImpl implements FlightDao {
 		        	  String at=resultSet.getString("arrival");
 		        	  String dt=resultSet.getString("departure");
 		        	  double price=resultSet.getDouble("price");
+		        	  int id=resultSet.getInt("flightid");
 /*		        	  String src=resultSet.getString("source");
 		        	  String dst=resultSet.getString("destination");*/
-		        	  flights.add(new Flights(company,dt,at,price));	        		 		 
+		        	  flights.add(new Flights(id,company,dt,at,price));	        		 		 
 	        	 }	        	
 	          }			
 	    }

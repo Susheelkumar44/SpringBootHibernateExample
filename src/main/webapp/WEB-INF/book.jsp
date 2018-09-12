@@ -89,11 +89,11 @@
 					<!-- START #fh5co-menu-wrap -->
 					<nav id="fh5co-menu-wrap" role="navigation">
 						<ul class="sf-menu" id="fh5co-primary-menu">
-							<li class="active"><a href="flights">Flights</a></li>
+							<li><a href="flights">Flights</a></li>
 							<li><a href="hotels">Hotels</a></li>
 							<li><a href="login">Login</a></li>
 							<li><a href="signUp">Sign Up</a></li>
-							<li><a href="contact">Contact</a></li>
+							<li class="active"><a href="contact">Contact</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -111,32 +111,33 @@
 				</div>
 				<form action="">
 					<div class="row animate-box">
-						<div class="center-block">
+						<div class="col-md-6" >
 							<h3 class="section-title"></h3>
-							<c:if test="${empty msg}">
+							<c:if test="${empty listFlights}">
 	<h3>No flights available</h3>
 	</c:if>
-							<c:if test="${!empty msg }">
+							<c:if test="${!empty listFlights}">
 							<table class="table table-hover" >
 							  <thead>
 								<tr>
-								<th scope="col">Flight ID</th>
+								<th scope="col">Flight Id</th>
 								  <th scope="col">Flight Name</th>
 								  <th scope="col">Departure</th>
 								  <th scope="col">Arrival</th>
 								  <th scope="col">Price</th>
+								  <th scope="col"></th>
 								</tr>
 							  </thead>
 							  <tbody>
-								<c:forEach items="${msg}" var="flight">
+								<c:forEach items="${listFlights}" var="flight">
 								<tr>
 									<td>${flight.flightid}</td>
 									<td>${flight.getFlightName()}</td>
 									<td>${flight.departure}</td>
 									<td>${flight.arrival}</td>
-									<td>&#8377; ${flight.price}</td>
-									<td><a href="/Book2/${flight.flightid}" class="btn btn-block btn-primary">Book</a>
-									<!-- <td><input type="submit" class="btn btn-primary btn-block" value="Book"></td> -->
+									<td>${flight.price}</td>
+									<td><a href="/book/${flight.flightid}">Book</a>
+									<!--  <td><input type="submit" class="btn btn-primary btn-block" value="Book"></td>
 									<!-- <td><a href="<c:url value='/updateCustomer/${customer.id}' />" >Edit</a></td>
 									<td><a href="<c:url value='/deleteCustomer/${customer.id}' />" >Delete</a></td> -->
 								</tr>
@@ -147,7 +148,6 @@
 						</div>
 					</div>
 				</form>
-				
 			</div>
 		</div>
 				<!-- fh5co-blog-section -->
@@ -309,3 +309,4 @@
 
 	</body>
 </html>
+

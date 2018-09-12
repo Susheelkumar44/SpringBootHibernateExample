@@ -105,9 +105,9 @@ public class Flights {
                            + ", price=" + price + "]";
        }
 
-       public Flights(String flightName, String departure, String arrival, double price) {
+       public Flights(int flightid, String flightName, String departure, String arrival, double price) {
               super();
-              //this.flightid = flightid;
+              this.flightid = flightid;
               this.flightName = flightName;
               /*this.source = source;
               this.destination = destination;*/
